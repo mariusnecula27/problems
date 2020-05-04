@@ -33,7 +33,6 @@ def checkCNP(cnp):
             return "CNP invalid"
 
         # AA - anul nasterii
-        # cod redundant - este acoperit de primul IF
         if int(cnp[1:3]) >= 0 and int(cnp[1:3]) <= 99:
             pass
         else:
@@ -84,7 +83,7 @@ def checkCNP(cnp):
         else:
             return "CNP invalid"
 
-        # NNN - redundant
+        # NNN 
         if int(cnp[9:12]) > 0 and int(cnp[9:12]) < 1000:
             pass
         else:
